@@ -1,16 +1,16 @@
 
 body{
-   
+   width: 100%;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
-
+    box-sizing: unset;
 }
 .header{
     background-color:#0C3C78;
     color: white;
     font-size: 21px;
-    height: 6%;
+    height: fit-content;
     margin-top: 0%;
     margin-right: 0px;
     position: fixed;
@@ -25,18 +25,19 @@ body{
     margin: 2px 0px 30px 0px ;
 
 }
-.navbar{
+.navbar{ 
+    display: flex;
     width: 100%;
     height: 100px;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     background-color: #160F30;
-   
+    justify-content: flex-end;
 }
  nav ul{
     height:32px;
-    width:440.19;
-    list-style-type:none;
+    
+    list-style:none;
     display: flex;
     margin: 0px 0px 0px 0px;
     cursor: pointer;
@@ -54,13 +55,15 @@ body{
    
  }
  ul{
-  
+    display: flex;
     justify-content: center;
     margin-left: 50px;
     margin-right: 0px;
     padding:4px 8px;
     margin-bottom: 0px;
  }
+
+ 
  .imagebg{ 
     height: 633.91px;
     width:100%;
@@ -68,22 +71,20 @@ body{
     padding:  0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
 }
+
 h1{ height: 116px;
     width: 693px;
     font-size: 48px;
     margin: 0px 0px 24px;
     color: #ffffff;
-    padding: 170px;
+    padding-left: 170px;
+    padding-top: 170px;
+    padding-right: 170px;
 } 
-.abc{ 
-    height: 116px;
-    width: 693px;
-    font-size: 48px; 
-    margin: 0px 0xpx 24px;
-    color: #ffffff;
-    padding: 170px;
 
-}
+
+
+
 /* .navbar h1{
     height: 68px;
     width: 693px;
@@ -111,7 +112,8 @@ main{
     font-weight:bold;
     font-size: 25px;
     border-radius: 5px;
-  padding: 30px 10px 0px 0px;
+
+  padding-left: 0px;
 }
 .list{
     margin-top: 25px;
@@ -135,10 +137,10 @@ main{
    
 }
 .list1{
-    margin-top: 0px;
+    margin-top: 40px;
     color: #CCD2DE;
     font-size: 15px;
-    border-radius: 15px;
+    padding: 0;
    
    margin-bottom: 0px;
 }
@@ -147,9 +149,11 @@ main{
 }
 .search{
    margin: 0px 0px 0px 0px;
+   padding: 0;
     background-color:grey;
     border-radius:50px;
     height: 44px;
+    border-radius: 25px;
     width: 44px;
 }
 .search1{
@@ -165,8 +169,16 @@ main{
     height: 1px;
     width: 44px;
 }
+
+.navbar ul.right-menu{
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;
+    
+}
+
 .login{
-    margin:0;
+    margin-top: 12px;
     padding:0;
   background-color: #160F30;
     border-color: #ffffff;
@@ -176,7 +188,7 @@ height: 40px;
     border-radius: 5px;
 }
 .signup{
-    margin:0;
+    margin-top: 12px;
     padding:0;
   background-color: white;
     border-color: #ffffff;
@@ -185,3 +197,314 @@ width: 80px;
 height: 40px;
     border-radius: 5px;
 }
+.signup_one{
+    margin-top: 12px;
+    padding:0;
+    font-size: 18px;
+  background-color: white;
+    border-color: #ffffff;
+    color: black;
+width: 100px;
+height: 50px;
+    border-radius: 5px;
+}
+
+.signup_two{
+    margin-top: 12px;
+    padding:0;
+    font-size: 18px;
+  background-color: #0c6cf2;
+  border-style: none;
+    color: #ffffff;
+width: 150px;
+height: 50px;
+    border-radius: 5px;
+}
+
+
+.btn{
+    height: 100px;
+    width: 54px;
+    margin: 0 250px 24px;
+}
+
+.loginbar{
+    list-style: none; 
+    display: flex;
+}
+
+.btn_started{
+    padding-right: 30px;
+}
+
+
+
+/*main content*/
+.main_content{
+    padding-top: 25px;
+
+}
+
+#blocks {
+    margin: -4rem 0px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.block_style {
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    /* background-color: blueviolet; */
+    border-radius: 0.5rem;
+    box-shadow: rgb(103, 113, 133, 20%) 0.75rem 1.5rem 4rem 0rem;
+    color: rgb(18, 29, 51);
+    min-width: 0px;
+    padding: 1.25rem;
+    transition: background-image 0.6s ease 0s;
+    margin: 0.75rem;
+    /* width: 11rem;
+    height: 6rem; */
+}
+
+.buy {
+    background-color: rgb(217, 212, 245);
+    border-radius: 0.25rem;
+    border: none;
+    color: rgb(83, 34, 229);
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    transition: 0.3s ease 0s;
+    margin: 0px 0.2rem 0px 0.8rem;
+}
+
+.buy:hover {
+    background-color: rgb(190, 182, 243);
+}
+
+.trade {
+    background-color: rgb(183, 247, 233);
+    border-radius: 0.25rem;
+    border: none;
+    color: rgb(0, 153, 76);
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    transition: 0.3s ease 0s;
+    margin-right: 0.5rem;
+}
+
+.trade:hover {
+    background-color: rgb(135, 236, 215);
+}
+
+#img_deso {
+    height: 2.5rem;
+    width: 2.5rem;
+
+}
+
+.block_head img {
+    margin: -1rem 0.5rem;
+}
+
+.block_mid {
+    margin: 1.2rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    font-size: 1.1rem;
+}
+
+.bold {
+    font-weight: 550;
+    margin: 0px 0.5rem 0px 0px;
+    color: black;
+}
+
+.grey {
+    font-weight: 600;
+    color: rgb(88, 88, 88);
+    margin: 0px 0px 0px 0.25rem;
+}
+
+.block_end {
+    display: flex;
+    margin: 0.5rem 0.5rem;
+}
+
+.green {
+    font-weight: 600;
+    color: rgb(2, 168, 105);
+}
+
+.large {
+    font-size: 1.3rem;
+}
+
+.box {
+    display: flex;
+    margin: 10rem 2rem -5rem 2rem;
+    border-radius: 2rem;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+
+}
+
+#purple {
+    background-color: rgb(238, 231, 253);
+    color: rgb(96, 50, 221);
+    background-image: url(images//purple_background.png);
+    overflow: hidden;
+    background-size: 35rem;
+    background-position: right top 2.5rem;
+    background-repeat: no-repeat;
+}
+
+#box1 {
+    padding: 3rem 2rem 2rem 7rem;
+}
+
+#box2 {
+    padding: 9rem 0px 2rem 0px;
+}
+
+#wallet {
+    align-self: flex-start;
+    background-color: rgb(214, 207, 243, 50%);
+    border-radius: 1.25rem;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.box_head {
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3.25rem;
+    margin: 0.5rem 0px 1.75rem 0px;
+    max-width: 30rem;
+}
+
+.box_div {
+    align-self: flex-start;
+    border-radius: 1rem;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    padding: 1rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    max-width: 25rem;
+}
+
+#blue {
+    background-color: rgb(236, 243, 253);
+    color: rgb(12, 108, 242);
+    background-image: url(images//blue_background.png);
+    overflow: hidden;
+    background-size: 35rem;
+    background-position: right top 2.5rem;
+    background-repeat: no-repeat;
+
+}
+
+#grey {
+    background-color: rgb(235, 235, 235, 30%);
+    background-image: url(images//grey_background.png);
+    overflow: hidden;
+    background-size: 35rem;
+    background-position: right top 2.5rem;
+    background-repeat: no-repeat;
+}
+
+#orange {
+    background-color: rgb(255, 247, 228);
+    color: rgb(255, 153, 0);
+    background-image: url(images//orange_background.png);
+    overflow: hidden;
+    background-size: 35rem;
+    background-position: right top 2.5rem;
+    background-repeat: no-repeat;
+}
+
+.orange_color {
+    border: 1px solid orange;
+}
+
+.blue_color {
+    border: 1px solid rgb(12, 108, 242);
+}
+
+.purple_color {
+    border: 1px solid rgb(187, 168, 243);
+    color: rgb(115, 73, 242);
+}
+
+#box_started {
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.25rem;
+    margin-top: 0.75rem;
+    margin-left: 0.4rem;
+}
+
+.font_increase {
+    font-size: 1rem;
+    margin: 1rem 0px;
+}
+
+.f_increase {
+    font-size: 1.25rem;
+    font-weight: 560;
+}
+
+#banner {
+    position: relative;
+    padding: 5rem 5rem;
+    margin: 6rem 0px;
+    display: flex;
+    background-color: rgb(1, 1, 34);
+    background-image: url(https://www.blockchain.com/static/img/banner/banner-bg.svg);
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#banner_head {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header_logo {
+    display: flex;
+}
+
+#medium {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.login_button{
+        background-color: #ffffff;
+        color: #0c6cf2;
+        width: 170px;
+        font-size: 18px;
+        height: 65px;
+        border-radius: 8px;
+}
+
